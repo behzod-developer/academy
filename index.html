@@ -323,20 +323,74 @@
 				</div>
 			</article>
 		</div>
-		
+		<div class="swiper-pagination"></div>
 	</section>
+
+	<footer>
+		<div class="container footer_container">
+			<div class="footer__1">
+				<a href="index.html" class="footer_logo"><h4>EGATOR</h4></a>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+			</div>
+
+			<div class="footer__2">
+				<h4>Premalinks</h4>
+				<ul class="permalinks">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="courses.html">Courses</a></li>
+					<li><a href="content.html">Contant</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__3">
+				<h4>Primacy</h4>
+				<ul class="primacy">
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms and conditions</a></li>
+					<li><a href="#">Refund Policy</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__4">
+				<h4>Contact us</h4>
+				<div>
+					<p>+998 ** *** ** **</p>
+					<p>bsharifjonov@gmail.com</p>
+				</div>
+
+				<ul class="footer__socials">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
+			<div class="footer__copyright">
+				<small>Copyright &copy; EGATOR wotofy_technology</small>
+			</div>
+	</footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="assisend/js/index.js"></script>
+
+
 <script>
 	var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      // when window width is >= 600px
+      breakpoints: {
+      	600: {
+      		slidesPerView: 2
+      	}
+      }
     });
 </script>
 </body>

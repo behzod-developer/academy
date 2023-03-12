@@ -22,4 +22,25 @@ faqs.forEach(faq =>{
 			icon.className = 'fa fa-plus';
 		}
 	})
-})
+});
+
+
+// show/hide nav menu
+const menu = document.querySelector(".nav__menu");
+const menuBtn = document.querySelector("#open-menu-btn");
+const closeBtn = document.querySelector("#close-menu-btn");
+
+menuBtn.addEventListener('click', () => {
+	menu.style.display = "flex";
+	closeBtn.style.display = "inline-block";
+	manuBtn.style.display = "none";
+
+});
+
+const closeNav = () => {
+	menu.style.display = "none";
+	closeBtn.style.display = "none";
+	manuBtn.style.display = "inline-block";
+}
+
+closeBtn.addEventListener('click', closeNav);
